@@ -1,0 +1,625 @@
+html, body, div, span, applet, object, iframe,
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+
+a, abbr, acronym, address, big, cite, code,
+
+del, dfn, em, img, ins, kbd, q, s, samp,
+
+small, strike, strong, sub, sup, tt, var,
+
+b, u, i, center,
+
+dl, dt, dd, ol, ul, li,
+
+fieldset, form, label, legend,
+
+table, caption, tbody, tfoot, thead, tr, th, td,
+
+article, aside, canvas, details, embed, 
+
+figure, figcaption, footer, header, hgroup, 
+
+menu, nav, output, ruby, section, summary,
+
+time, mark, audio, video {
+
+	margin: 0;	padding: 0;
+
+	border: 0;
+
+	font-size: 100%;
+
+	font: inherit;
+
+	vertical-align: baseline;
+
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+
+footer, header, hgroup, menu, nav, section {
+
+	display: block;
+
+}
+
+body {
+
+	line-height: 1;
+
+}
+
+ol, ul {
+
+	list-style: none;
+
+}
+
+blockquote, q {
+
+	quotes: none;
+
+}
+
+blockquote:before, blockquote:after,
+
+q:before, q:after {
+
+	content: '';
+
+	content: none;
+
+}
+
+table {
+
+	border-collapse: collapse;
+
+	border-spacing: 0;
+
+}
+
+*,
+
+*:before,
+
+*:after {
+
+  -webkit-box-sizing: border-box;
+
+     -moz-box-sizing: border-box;
+
+          box-sizing: border-box;
+
+}
+
+body {
+
+    min-height: 100vh;
+
+    min-height: -webkit-fill-avaible;
+
+    min-width: 100vw;
+
+    min-width: -webkit-fill-avaible;
+
+    font-size: 3vh;
+
+    font-family: Modak;
+
+    letter-spacing: 0.03vh;
+
+     background-image: url(Bk.jpeg);
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+}
+
+input[type="number"] {
+
+  background-color: #ff9999;
+
+}
+
+input[type="number"]:disabled {
+
+  text-align: center;
+
+  border-color: lightsalmon;
+
+  background-color: lightsalmon;
+
+  color: black;
+
+}
+
+input[type="submit"]:disabled {
+
+  color: dimgray;
+
+}
+
+ @media all and (orientation:portrait) {
+
+   #header {
+
+  font-size: 6vh;
+
+  position: absolute;
+
+  top: 2vh;
+
+  width: 50vw;
+
+  right: 25vw;
+
+  left: 25vw;
+
+  text-align: center;
+
+}
+
+   input[type="number"] {
+
+  border: 0.03vh solid black;
+
+  width: 15vw;
+
+  height: 5vh;
+
+  font-size: 3vh;
+
+  text-align: center;
+
+  font-family: Modak;
+
+  letter-spacing: 0.03vh;
+
+}
+
+input[type="submit"] {
+
+  border: 0.03vh solid black;
+
+  width: 25vw;
+
+  height: 7vh;
+
+  font-size: 3vh;
+
+  text-align: center;
+
+  font-family: Modak;
+
+  letter-spacing: 0.03vh;
+
+  border-radius: 4vw;
+
+  background-color: lightsalmon;
+
+}
+
+   #big {
+
+    position: relative;
+
+    height: 80vh;
+
+    width: 90vw;
+
+    left: 5vw;
+
+    right: 5vw;
+
+    top: 10vh;
+
+    bottom: 10vh;
+
+    border-radius: 10vw;
+
+    background-image: url(Haromszog.jpg);
+
+    background-size: 60vw 60vh;
+
+    background-position-x: center;
+
+    background-repeat: no-repeat;
+
+    background-color: white;
+
+   }
+
+   .buttons2 {
+
+     position: absolute;
+
+     bottom: 3vh;
+
+     left: 5vw;
+
+   }
+
+   .buttons4 {
+
+     position: absolute;
+
+     bottom: 3vh;
+
+     right: 5vw;
+
+   }
+
+   .buttons3 {
+
+     position: absolute;
+
+     bottom: 3vh;
+
+     left: 32.5vw;
+
+   }
+
+   #guess1 {
+
+     position: absolute;
+
+     top: 11vh;
+
+     left: 18vw;
+
+   }
+
+   #guess4 {
+
+     position: absolute;
+
+     top: 8vh;
+
+     left: 56vw;
+
+   }
+
+   #guess2 {
+
+     position: absolute;
+
+     top: 35vh;
+
+     left: 12vw;
+
+   }
+
+   #guess3 {
+
+     position: absolute;
+
+     top: 34vh;
+
+     right: 14vw;
+
+   }
+
+   #guess5 {
+
+     position: absolute;
+
+     top: 45vh;
+
+     left: 9vw;
+
+   }
+
+   #guess6 {
+
+     position: absolute;
+
+     top: 45vh;
+
+     right: 9vw;
+
+   }
+
+   #text {
+
+     position: absolute;
+
+     top: 2vh;
+
+     left: 3vw;
+
+   }
+
+   #points {
+
+     position: absolute;
+
+     top: 2vh;
+
+     left: 33vw;
+
+   }
+
+   #slash {
+
+     position: absolute;
+
+     top: 2vh;
+
+     left: 36vw;
+
+   }
+
+   #maxPoints {
+
+     position: absolute;
+
+     top: 2vh;
+
+     left: 39vw;
+
+   }
+
+   #instructions {
+
+     position: absolute;
+
+     top: 60vh;
+
+     left: 3vw;
+
+   }
+
+ }
+
+  @media all and (orientation: landscape) {
+
+   input[type="number"] {
+
+  border: 0.03vh solid black;
+
+  width: 10vw;
+
+  height: 8vh;
+
+  font-size: 5vh;
+
+  text-align: center;
+
+  font-family: Modak;
+
+  letter-spacing: 0.03vh;
+
+}
+
+input[type="submit"] {
+
+  border: 0.03vh solid black;
+
+  width: 20vw;
+
+  height: 12vh;
+
+  font-size: 5vh;
+
+  text-align: center;
+
+  font-family: Modak;
+
+  letter-spacing: 0.03vh;
+
+  border-radius: 4vw;
+
+  background-color: lightsalmon;
+
+}
+
+   #big {
+
+    box-sizing: border-box;
+
+    position: absolute;
+
+    height: 80vh;
+
+    width: 85vw;
+
+    left: 7.5vw;
+
+    right: 7.5vw;
+
+    top: 12vh;
+
+    border-radius: 5vw;
+
+    background-color: white;
+
+    background-image: url(Haromszog.jpg);
+
+    background-repeat: no-repeat;
+
+    background-size: 35vw 85vh;
+
+    background-position-x: 10vw;
+
+    background-position-y: -4vh;
+
+    
+
+   }
+
+      #header {
+
+  font-size: 9vh;
+
+  position: absolute;
+
+  top: 2vh;
+
+  width: 50vw;
+
+  right: 25vw;
+
+  left: 25vw;
+
+  text-align: center;
+
+}
+
+  .buttons2 {
+
+    position: absolute;
+
+    top: 18vh;
+
+    left: 57vw;
+
+  }
+
+  .buttons3 {
+
+    position: absolute;
+
+    top: 38vh;
+
+    left: 57vw;
+
+  }
+
+  .buttons4 {
+
+    position: absolute;
+
+    top: 58vh;
+
+    left: 57vw;
+
+  }
+
+  #instructions {
+
+    position: absolute;
+
+    top: 4vh;
+
+    width: 40vw;
+
+    left: 45vw;
+
+    font-size: 5vh;
+
+  }
+
+  #guess1 {
+
+    position: absolute;
+
+    top: 12vh;
+
+    left: 9vw;
+
+  }
+
+  #guess4 {
+
+    position: absolute;
+
+    top: 8vh;
+
+    left: 34vw;
+
+  }
+
+  #guess2 {
+
+    position: absolute;
+
+    top: 46vh;
+
+    left: 6vw;
+
+  }
+
+  #guess3 {
+
+    position: absolute;
+
+    top: 45vh;
+
+    left: 37vw;
+
+  }
+
+  #guess5 {
+
+    position: absolute;
+
+    top: 58vh;
+
+    left: 3vw;
+
+  }
+
+  #guess6 {
+
+    position: absolute;
+
+    top: 58vh;
+
+    left: 40vw;
+
+  }
+
+  #text {
+
+    position: absolute;
+
+    top: 3vh;
+
+    left: 1.5vw;
+
+    font-size: 5vh;
+
+  }
+
+    #points {
+
+    position: absolute;
+
+    top: 3vh;
+
+    left: 19vw;
+
+    font-size: 5vh;
+
+ }
+
+   #slash {
+
+     position: absolute;
+
+     top: 3vh;
+
+     left: 21vw;
+
+     font-size: 5vh;
+
+   }
+
+     #maxPoints {
+
+       position: absolute;
+
+       top: 3vh;
+
+       left: 23vw;
+
+       font-size: 5vh;
+
+     }
+
+  }
