@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="hu">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, target-densityDpi=device-dpi" />
+
+  <link href="https://fonts.googleapis.com/css?family=Modak" rel="stylesheet">
+
+  <title>Szögszámoló</title>
+
+  <link rel="shortcut icon" type="image/jpg" href="logo.ico"/>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <div id="header">Szögszámoló</div>
+
+  <div id="big">
+
+  <input type="number" class="buttons" id="guess1" name="name" required>
+
+  <input type="number" class="buttons" id="guess2" name="name" required>
+
+  <input type="number" class="buttons" id="guess3" name="name" required>
+
+  <input type="number" class="buttons" id="guess4" name="name" required>
+
+  <input type="number" class="buttons" id="guess5" name="name" required>
+
+  <input type="number" class="buttons" id="guess6" name="name" required>
+
+  <br>
+
+  <br>
+
+  <input class="buttons2" onclick="cheat()" type="submit" id="submitGuess" value="Ellenőrzés">
+
+  <input class="buttons3" onclick="nextTask()" type="submit" id="nextTask" value="Új szög">
+
+  <input class="buttons4" onclick="resetGame()" type="submit" id="resetGame" value="Újrakezdés"> <br>
+
+  <span id="text">Pontszámod:</span> 
+
+  <span id="points"></span>
+
+  <span id="slash"></span>
+
+  <span id="maxPoints"></span>
+
+  <p id="instructions">Írd be a hiányzó szögeket, majd kattints az ellenőrzésre!</p>
+
+  </div>
+
+   <script src="main.js"></script>
+
+</body>
+
+</html>
